@@ -154,14 +154,4 @@
       content: $fa-var-envelope;
     }
   }
-  &.whats-app {
-    background-color: $f-color-whats-app;
-    color: $f-color-white;
-    &:before {
-      font: {
-        family: FundlyIcons;
-      }
-      content: $f-icon-var-whats-app;
-    }
-  }
 }
