@@ -102,7 +102,7 @@ input, button, select, textarea {
   font-weight: 500;
 }
 .f-fw-bold {
-  font-weight: 700;
+  font-weight: 600;
 }
 .f-fw-ultrabold {
   font-weight: 900;
@@ -112,7 +112,7 @@ input, button, select, textarea {
 // Headings
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: $f-font-condensed;
+  font-family: $f-font-base;
   font-weight: 700;
 }
 h1, .h1 {
