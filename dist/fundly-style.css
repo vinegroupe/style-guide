@@ -84,9 +84,9 @@ Fundly Style Guide compiled for use in front-end contexts.
 .pull-left {
   float: left; }
 
-.fa.pull-left {
+.fa.pull-left, .pull-left.f-gallery-leftarea, .pull-left.f-gallery-rightarea {
   margin-right: 0.3em; }
-.fa.pull-right {
+.fa.pull-right, .pull-right.f-gallery-leftarea, .pull-right.f-gallery-rightarea {
   margin-left: 0.3em; }
 
 .fa-spin {
@@ -868,10 +868,10 @@ Fundly Style Guide compiled for use in front-end contexts.
 .fa-angle-double-down:before {
   content: "\f103"; }
 
-.fa-angle-left:before {
+.fa-angle-left:before, .f-gallery-leftarea:before {
   content: "\f104"; }
 
-.fa-angle-right:before {
+.fa-angle-right:before, .f-gallery-rightarea:before {
   content: "\f105"; }
 
 .fa-angle-up:before {
@@ -2408,7 +2408,7 @@ li {
   position: relative;
   padding: 0 0.75em;
   line-height: 2.5em;
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   border-width: 1px;
   border-style: solid;
@@ -2515,12 +2515,6 @@ li {
       content: "\f0d2"; }
   .f-button.email:before {
     content: "\f0e0"; }
-  .f-button.whats-app {
-    background-color: #60B82D;
-    color: white; }
-    .f-button.whats-app:before {
-      font-family: FundlyIcons;
-      content: "\e613"; }
 
 .f-popup {
   position: absolute;
@@ -3024,7 +3018,7 @@ li {
     max-width: 100%; }
   .f-content-section p, .f-content-section li {
     line-height: 1.35em;
-    font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-weight: 300; }
   .f-content-section li {
@@ -3878,16 +3872,16 @@ a, .f-anchor {
     outline-offset: -2px; }
 
 .f-font-main {
-  font-family: "Roboto", Helvetica, Arial, sans-serif; }
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
 .f-font-condensed {
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif; }
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
 .f-font-monospace {
   font-family: Monaco, Menlo, "Courier New", monospace; }
 
 .f-font-sans-serif {
-  font-family: "Roboto", Helvetica, Arial, sans-serif; }
+  font-family: "Open Sans", Helvetica, Arial, sans-serif; }
 
 .f-font-serif {
   font-family: "Roboto Slab", Georgia, Times, serif; }
@@ -3901,7 +3895,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857; }
 
@@ -3943,13 +3937,13 @@ input, button, select, textarea {
   font-weight: 500; }
 
 .f-fw-bold {
-  font-weight: 700; }
+  font-weight: 600; }
 
 .f-fw-ultrabold {
   font-weight: 900; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
 h1, .h1 {
@@ -5682,7 +5676,7 @@ iframe {
 /**
  * set default color for tooltip arrows
  */
-.hint--top:before {
+.hint--top:before, .hint--top--right:before {
   border-top-color: #383838; }
 
 .hint--bottom:before {
@@ -5697,14 +5691,14 @@ iframe {
 /**
  * top tooltip
  */
-.hint--top:before {
+.hint--top:before, .hint--top--right:before {
   margin-bottom: -12px; }
-.hint--top:after {
+.hint--top:after, .hint--top--right:after {
   margin-left: -18px; }
-.hint--top:before, .hint--top:after {
+.hint--top:before, .hint--top--right:before, .hint--top:after, .hint--top--right:after {
   bottom: 100%;
   left: 50%; }
-.hint--top:hover:after, .hint--top:hover:before, .hint--top:focus:after, .hint--top:focus:before {
+.hint--top:hover:after, .hint--top--right:hover:after, .hint--top:hover:before, .hint--top--right:hover:before, .hint--top:focus:after, .hint--top--right:focus:after, .hint--top:focus:before, .hint--top--right:focus:before {
   -webkit-transform: translateY(-8px);
   -ms-transform: translateY(-8px);
   transform: translateY(-8px); }
@@ -5774,7 +5768,7 @@ iframe {
 .hint--error:after {
   background-color: #b34e4d;
   text-shadow: 0 -1px 0px #592626; }
-.hint--error.hint--top:before {
+.hint--error.hint--top:before, .hint--error.hint--top--right:before {
   border-top-color: #b34e4d; }
 .hint--error.hint--bottom:before {
   border-bottom-color: #b34e4d; }
@@ -5789,7 +5783,7 @@ iframe {
 .hint--warning:after {
   background-color: #c09854;
   text-shadow: 0 -1px 0px #6c5228; }
-.hint--warning.hint--top:before {
+.hint--warning.hint--top:before, .hint--warning.hint--top--right:before {
   border-top-color: #c09854; }
 .hint--warning.hint--bottom:before {
   border-bottom-color: #c09854; }
@@ -5804,7 +5798,7 @@ iframe {
 .hint--info:after {
   background-color: #3986ac;
   text-shadow: 0 -1px 0px #193b4d; }
-.hint--info.hint--top:before {
+.hint--info.hint--top:before, .hint--info.hint--top--right:before {
   border-top-color: #3986ac; }
 .hint--info.hint--bottom:before {
   border-bottom-color: #3986ac; }
@@ -5819,7 +5813,7 @@ iframe {
 .hint--success:after {
   background-color: #458746;
   text-shadow: 0 -1px 0px #1a321a; }
-.hint--success.hint--top:before {
+.hint--success.hint--top:before, .hint--success.hint--top--right:before {
   border-top-color: #458746; }
 .hint--success.hint--bottom:before {
   border-bottom-color: #458746; }
@@ -5840,7 +5834,7 @@ iframe {
 .hint--always:after, .hint--always:before {
   opacity: 1;
   visibility: visible; }
-.hint--always.hint--top:after, .hint--always.hint--top:before {
+.hint--always.hint--top:after, .hint--always.hint--top--right:after, .hint--always.hint--top:before, .hint--always.hint--top--right:before {
   -webkit-transform: translateY(-8px);
   -ms-transform: translateY(-8px);
   transform: translateY(-8px); }
@@ -5883,11 +5877,11 @@ iframe {
   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24); }
 
 [class*='hint--']:after {
-  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 500;
   background: black; }
 
-.hint--top:before {
+.hint--top:before, .hint--top--right:before {
   border-top-color: black; }
 
 .hint--bottom:before {
