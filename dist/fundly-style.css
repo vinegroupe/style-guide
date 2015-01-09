@@ -3214,6 +3214,39 @@ a {
 .f-b-xlight, .f-b-hover-xlight, [class*="f-b-xlight"], .f-hr-xlight {
   border-color: #e8e8e8; }
 
+.f-fc-xxlight, .f-fc-hover-xxlight:hover {
+  color: #f5f5f5; }
+
+.f-list li:hover .f-list-xxlight, .f-selectable:hover .f-selectable-xxlight {
+  color: #f5f5f5; }
+
+.f-bg-xxlight, .f-bg-hover-xxlight:hover {
+  background-color: #f5f5f5;
+  color: #4A4A4A; }
+
+.f-bg-xxlight-o-xlight {
+  background-color: rgba(245, 245, 245, 0.25);
+  color: #4A4A4A; }
+
+.f-bg-xxlight-o-light {
+  background-color: rgba(245, 245, 245, 0.5);
+  color: #4A4A4A; }
+
+.f-bg-xxlight-o-medium {
+  background-color: rgba(245, 245, 245, 0.75);
+  color: #4A4A4A; }
+
+.f-bg-xxlight-o-dark {
+  background-color: rgba(245, 245, 245, 0.85);
+  color: #4A4A4A; }
+
+.f-bg-xxlight-o-xdark {
+  background-color: rgba(245, 245, 245, 0.95);
+  color: #4A4A4A; }
+
+.f-b-xxlight, .f-b-hover-xxlight, [class*="f-b-xxlight"], .f-hr-xxlight {
+  border-color: #f5f5f5; }
+
 .f-fc-light, .f-fc-hover-light:hover {
   color: #cfd2d5; }
 

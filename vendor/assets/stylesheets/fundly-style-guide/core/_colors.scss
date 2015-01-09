@@ -78,6 +78,7 @@ a {
 // Black to White color sets
 @include make-color-set('white',       $f-color-white);
 @include make-color-set('xlight',      $f-color-xlight);
+@include make-color-set('xxlight',     $f-color-xxlight);
 @include make-color-set('light',       $f-color-light);
 @include make-color-set('medium',      $f-color-medium);
 @include make-color-set('dark',        $f-color-dark);
