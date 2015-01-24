@@ -2432,6 +2432,7 @@ li {
     text-decoration: none; }
   .f-button.stroke {
     color: #4A4A4A;
+    background-color: transparent;
     border-width: 2px;
     border-color: #4A4A4A; }
     .f-button.stroke:hover {
