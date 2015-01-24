@@ -74,6 +74,7 @@ a {
 
 // Primary color set
 @include make-color-set('primary',     $f-color-primary);
+@include make-color-set('primarylight',     $f-color-primary-light);
 
 // Black to White color sets
 @include make-color-set('white',       $f-color-white);

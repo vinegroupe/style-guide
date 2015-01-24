@@ -32,6 +32,20 @@
     text-decoration: none;
   }
 
+  &.stroke {
+    color: $f-color-xdark;
+    border: {
+      width: 2px;
+      color: $f-color-xdark;
+    }
+    &:hover {
+      color: $f-color-primary;
+      border-color: $f-color-primary;
+      background-image: none;
+      background-color: $f-color-primary-light;
+    }
+  }
+
   &.primary {
     background-color: $f-color-primary;
     color: $f-color-white;

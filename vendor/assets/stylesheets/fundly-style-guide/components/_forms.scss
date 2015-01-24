@@ -83,11 +83,11 @@ input[type='checkbox'], input[type='radio'] {
   margin-bottom: auto;
 }
 input[type='checkbox'] {
-  border-radius: 4px;
+  border-radius: 2px;
 }
 input[type='checkbox']:checked {
-  background: $f-color-swatch-four;
-  border-color: darken($f-color-swatch-four, 5%);
+  background: $f-color-primary;
+  border-color: $f-color-primary;
 
   &:after {
     position: absolute;
