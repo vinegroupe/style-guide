@@ -2409,7 +2409,6 @@ li {
   padding: 0 0.75em;
   line-height: 2.5em;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
   border-width: 1px;
   border-style: solid;
@@ -4021,8 +4020,7 @@ input, button, select, textarea {
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.1em; }
+  font-weight: 700; }
 
 h1, .h1 {
   font-size: 48px; }
